@@ -1,4 +1,4 @@
---Pls Don't Steal
+a--Pls Don't Steal
 --Made By BaiScript
 
 local Players = game:GetService("Players"):GetChildren()
@@ -11,6 +11,7 @@ for i, v in pairs(Players) do
       if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
          local highlightClone = highlight:Clone()
          highlightClone.Adornee = v.Character
+         highlightClone.Color(0, 255, 0)
          highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
          highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
          highlightClone.Name = "Highlight"
@@ -22,6 +23,7 @@ game.Players.PlayerAdded:Connect(function(player)
       if not player.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
          local highlightClone = highlight:Clone()
          highlightClone.Adornee = player.Character
+         highlightClone.Color(0, 255, 0)
          highlightClone.Parent = player.Character:FindFirstChild("HumanoidRootPart")
          highlightClone.Name = "Highlight"
       end
@@ -33,6 +35,7 @@ game.Players.PlayerRemoving:Connect(function()
            if not v.Character:FindFirstChild("HumanoidRootPart"):FindFirstChild("Highlight") then
               local highlightClone = highlight:Clone()
               highlightClone.Adornee = v.Character
+              highlightClone.Color(0, 255, 0)
               highlightClone.Parent = v.Character:FindFirstChild("HumanoidRootPart")
               highlightClone.DepthMode = Enum.HighlightDepthMode.AlwaysOnTop
               highlightClone.Name = "Highlight"
