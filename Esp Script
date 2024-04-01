@@ -1,4 +1,4 @@
-a--Pls Don't Steal
+--Pls Don't Steal
 --Made By BaiScript
 
 local Players = game:GetService("Players"):GetChildren()
